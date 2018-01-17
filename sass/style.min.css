@@ -1,1 +1,1 @@
-null
+*{margin:0;box-sizing:border-box}.cont{height:100vh;display:flex;justify-content:center;align-items:center;align-content:space-around;flex-direction:column}.cont:last-child{align-items:flex-end}

@@ -1,8 +1,4 @@
 $(function(){
-    getQuote();
-    $('.trigger').click(function() {
-        getQuote();
-    });
 
 
 function getQuote() {
@@ -29,4 +25,10 @@ function createTweet(input) {
         $('.tweet').attr('href', tweet);
     };
 };
+
+getQuote();
+$('.trigger').click(function() {
+    getQuote();
+});
+
 });
