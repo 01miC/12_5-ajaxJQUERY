@@ -3,7 +3,7 @@ $(function(){
     $('.trigger').click(function() {
         getQuote();
     })
-});
+
 
 function getQuote() {
     $.getJSON(quoteUrl, createTweet);
@@ -20,7 +20,7 @@ function createTweet(input) {
     }
 
     var tweetText = "Quote of the day - " + quoteText + " Author: " + quoteAuthor;
-    if (tweetText.length > 280) {
+    if (tweetText.length > 140) {
         getQuote();
     } else {
         var tweet = tweetLink + encodeURIComponent(tweetText);
@@ -29,4 +29,4 @@ function createTweet(input) {
         $('.tweet').attr('href', tweet);
     }
 };
-
+});
